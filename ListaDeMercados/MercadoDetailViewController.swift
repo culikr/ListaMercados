@@ -55,4 +55,6 @@ class MercadoDetailViewController: UIViewController {
     }
     
     
+    @IBAction func CancelaEdicao(_ sender: UIBarButtonItem) {
+    }
 }
