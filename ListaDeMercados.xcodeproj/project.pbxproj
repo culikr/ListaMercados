@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		C2856BFC1D97077200AF1C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2856BFB1D97077200AF1C69 /* AppDelegate.swift */; };
-		C2856BFE1D97077200AF1C69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2856BFD1D97077200AF1C69 /* ViewController.swift */; };
-		C2856C011D97077200AF1C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2856BFF1D97077200AF1C69 /* Main.storyboard */; };
 		C2856C041D97077200AF1C69 /* ListaDeMercados.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2856C021D97077200AF1C69 /* ListaDeMercados.xcdatamodeld */; };
 		C2856C061D97077200AF1C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2856C051D97077200AF1C69 /* Assets.xcassets */; };
 		C2856C091D97077200AF1C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2856C071D97077200AF1C69 /* LaunchScreen.storyboard */; };
+		C2DC36DD1D97095D00404774 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36D91D97095D00404774 /* CoreDataTableViewController.swift */; };
+		C2DC36DE1D97095D00404774 /* MercadoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36DA1D97095D00404774 /* MercadoDetailViewController.swift */; };
+		C2DC36DF1D97095D00404774 /* MercadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36DB1D97095D00404774 /* MercadosTableViewController.swift */; };
+		C2DC36E01D97095D00404774 /* MercadoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36DC1D97095D00404774 /* MercadoTableViewCell.swift */; };
+		C2DC36E31D97099100404774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DC36E11D97099100404774 /* Main.storyboard */; };
+		C2DC36E91D970AEB00404774 /* Mercados+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36E51D970AEB00404774 /* Mercados+CoreDataClass.swift */; };
+		C2DC36EA1D970AEB00404774 /* Mercados+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36E61D970AEB00404774 /* Mercados+CoreDataProperties.swift */; };
+		C2DC36EB1D970AEB00404774 /* Mercado+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36E71D970AEB00404774 /* Mercado+CoreDataClass.swift */; };
+		C2DC36EC1D970AEB00404774 /* Mercado+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36E81D970AEB00404774 /* Mercado+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2856BF81D97077200AF1C69 /* ListaDeMercados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaDeMercados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2856BFB1D97077200AF1C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2856BFD1D97077200AF1C69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C2856C001D97077200AF1C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2856C031D97077200AF1C69 /* ListaDeMercados.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListaDeMercados.xcdatamodel; sourceTree = "<group>"; };
 		C2856C051D97077200AF1C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2856C081D97077200AF1C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2856C0A1D97077200AF1C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2DC36D91D97095D00404774 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		C2DC36DA1D97095D00404774 /* MercadoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercadoDetailViewController.swift; sourceTree = "<group>"; };
+		C2DC36DB1D97095D00404774 /* MercadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercadosTableViewController.swift; sourceTree = "<group>"; };
+		C2DC36DC1D97095D00404774 /* MercadoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercadoTableViewCell.swift; sourceTree = "<group>"; };
+		C2DC36E21D97099100404774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2DC36E51D970AEB00404774 /* Mercados+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mercados+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C2DC36E61D970AEB00404774 /* Mercados+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mercados+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C2DC36E71D970AEB00404774 /* Mercado+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mercado+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C2DC36E81D970AEB00404774 /* Mercado+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mercado+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +71,29 @@
 			isa = PBXGroup;
 			children = (
 				C2856BFB1D97077200AF1C69 /* AppDelegate.swift */,
-				C2856BFD1D97077200AF1C69 /* ViewController.swift */,
-				C2856BFF1D97077200AF1C69 /* Main.storyboard */,
+				C2DC36D91D97095D00404774 /* CoreDataTableViewController.swift */,
+				C2DC36E11D97099100404774 /* Main.storyboard */,
+				C2DC36DA1D97095D00404774 /* MercadoDetailViewController.swift */,
+				C2DC36DB1D97095D00404774 /* MercadosTableViewController.swift */,
+				C2DC36DC1D97095D00404774 /* MercadoTableViewCell.swift */,
 				C2856C051D97077200AF1C69 /* Assets.xcassets */,
 				C2856C071D97077200AF1C69 /* LaunchScreen.storyboard */,
 				C2856C0A1D97077200AF1C69 /* Info.plist */,
-				C2856C021D97077200AF1C69 /* ListaDeMercados.xcdatamodeld */,
+				C2DC36E41D970AD000404774 /* Data Core */,
 			);
 			path = ListaDeMercados;
+			sourceTree = "<group>";
+		};
+		C2DC36E41D970AD000404774 /* Data Core */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC36E51D970AEB00404774 /* Mercados+CoreDataClass.swift */,
+				C2DC36E61D970AEB00404774 /* Mercados+CoreDataProperties.swift */,
+				C2DC36E71D970AEB00404774 /* Mercado+CoreDataClass.swift */,
+				C2DC36E81D970AEB00404774 /* Mercado+CoreDataProperties.swift */,
+				C2856C021D97077200AF1C69 /* ListaDeMercados.xcdatamodeld */,
+			);
+			name = "Data Core";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2DC36E31D97099100404774 /* Main.storyboard in Resources */,
 				C2856C091D97077200AF1C69 /* LaunchScreen.storyboard in Resources */,
 				C2856C061D97077200AF1C69 /* Assets.xcassets in Resources */,
-				C2856C011D97077200AF1C69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,28 +169,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2856C041D97077200AF1C69 /* ListaDeMercados.xcdatamodeld in Sources */,
-				C2856BFE1D97077200AF1C69 /* ViewController.swift in Sources */,
+				C2DC36E01D97095D00404774 /* MercadoTableViewCell.swift in Sources */,
+				C2DC36EC1D970AEB00404774 /* Mercado+CoreDataProperties.swift in Sources */,
 				C2856BFC1D97077200AF1C69 /* AppDelegate.swift in Sources */,
+				C2DC36EB1D970AEB00404774 /* Mercado+CoreDataClass.swift in Sources */,
+				C2DC36DF1D97095D00404774 /* MercadosTableViewController.swift in Sources */,
+				C2DC36E91D970AEB00404774 /* Mercados+CoreDataClass.swift in Sources */,
+				C2DC36DD1D97095D00404774 /* CoreDataTableViewController.swift in Sources */,
+				C2DC36DE1D97095D00404774 /* MercadoDetailViewController.swift in Sources */,
+				C2DC36EA1D970AEB00404774 /* Mercados+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C2856BFF1D97077200AF1C69 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C2856C001D97077200AF1C69 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C2856C071D97077200AF1C69 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C2856C081D97077200AF1C69 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C2DC36E11D97099100404774 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2DC36E21D97099100404774 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -303,6 +339,7 @@
 				C2856C0F1D97077200AF1C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
