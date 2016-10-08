@@ -1,4 +1,4 @@
-//
+	//
 //  MercadoDetailViewController.swift
 //  Lista de Mercados
 //
@@ -55,6 +55,5 @@ class MercadoDetailViewController: UIViewController {
     }
     
     
-    @IBAction func CancelaEdicao(_ sender: UIBarButtonItem) {
-    }
+    
 }

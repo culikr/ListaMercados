@@ -13,13 +13,13 @@ class MercadosTableViewController: CoreDataTableViewController,UISplitViewContro
     
     var detailViewController : MercadoDetailViewController? = nil
     // MARK: Model
-    let mercados = [
-       
-        (segmento:"mercado",nome:"Zafari",numlojas:1),
-        (segmento:"loja",nome:"Nacional",numlojas:1),
-        (segmento:"loja",nome:"Rissul",numlojas:1),
-        (segmento:"mercado",nome:"BIG",numlojas:1),
-        ]
+    //let mercados = [
+   //
+   //     (segmento:"mercado",nome:"Zafari",numlojas:1),
+   //     (segmento:"loja",nome:"Nacional",numlojas:1),
+    //    (segmento:"loja",nome:"Rissul",numlojas:1),
+    //    (segmento:"mercado",nome:"BIG",numlojas:1),
+    //    ]
     
     
 
@@ -72,8 +72,10 @@ class MercadosTableViewController: CoreDataTableViewController,UISplitViewContro
     }
 
   */
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
          let (segmento,nome,numloja) = mercados[(indexPath as NSIndexPath).row]
         // Configure the cell...
         //cell.textLabel?.text = mercados[indexPath.row].nome
@@ -86,6 +88,34 @@ class MercadosTableViewController: CoreDataTableViewController,UISplitViewContro
         return cell
     }
  
+    */
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        if let mercado = fetchedResultsController?.object(at: indexPath) as? Mercado {
+            var (nome,segmento,numloja) = ("","",0)
+            mercado.managedObjectContext?.performAndWait {
+                let a = mercado.segmento ?? "-"
+                let b = mercado.nome ?? "-"
+                let c = (mercado.numlojas)
+                nome = b
+                segmento = a
+                numloja = Int(c)
+                
+         
+            }
+            if let celula = cell as? MercadoTableViewCell {
+                
+                celula.configure(segmento,nome,numloja)
+                
+            }
+        }
+        return cell
+    }
+
+    
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -130,9 +160,12 @@ class MercadosTableViewController: CoreDataTableViewController,UISplitViewContro
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier=="mostraDetalhe"{
-            if let navcon = segue.destination as? UINavigationController {
-                   if let destino = navcon.visibleViewController as? MercadoDetailViewController,
-                    let indexPath = tableView.indexPathForSelectedRow {
+            if let destino = segue.destination as? DetalheSegmentoTableViewController {
+                   if let indexPath = tableView.indexPathForSelectedRow {
+                    let a = fetchedResultsController?.object(at: indexPath) as? Mercado
+                        print("!@##!@#!@#!@#!@#!@#!@#!@#!@#!@#!@#@!#!@#!@#!@#!@#@!#@! \(a?.nome)"	)
+                    
+                    
                     destino.mercado = fetchedResultsController?.object(at: indexPath) as? Mercado
                     }
                 }

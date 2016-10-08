@@ -2,13 +2,13 @@
 //  Mercados+CoreDataProperties.swift
 //  ListaDeMercados
 //
-//  Created by iossenac on 24/09/16.
+//  Created by iossenac on 08/10/16.
 //  Copyright © 2016 culik. All rights reserved.
 //
 
 import Foundation
 import CoreData
-
+ 
 
 extension Mercados {
 
@@ -16,8 +16,8 @@ extension Mercados {
         return NSFetchRequest<Mercados>(entityName: "Mercados");
     }
 
-    @NSManaged public var nome: String?
     @NSManaged public var endereco: String?
-    @NSManaged public var newRelationship: Mercado?
+    @NSManaged public var nome: String?
+    @NSManaged public var mercado: Mercado?
 
 }

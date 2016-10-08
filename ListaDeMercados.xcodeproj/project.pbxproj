@@ -11,6 +11,9 @@
 		C2856C041D97077200AF1C69 /* ListaDeMercados.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2856C021D97077200AF1C69 /* ListaDeMercados.xcdatamodeld */; };
 		C2856C061D97077200AF1C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2856C051D97077200AF1C69 /* Assets.xcassets */; };
 		C2856C091D97077200AF1C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2856C071D97077200AF1C69 /* LaunchScreen.storyboard */; };
+		C2BBCC131DA91E25000E0BB2 /* EditaMercadoControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBCC121DA91E25000E0BB2 /* EditaMercadoControler.swift */; };
+		C2BBCC151DA928B1000E0BB2 /* DetalheLoja.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBCC141DA928B1000E0BB2 /* DetalheLoja.swift */; };
+		C2BBCC171DA93649000E0BB2 /* DetalheSegmentoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBCC161DA93649000E0BB2 /* DetalheSegmentoTableViewController.swift */; };
 		C2DC36DD1D97095D00404774 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36D91D97095D00404774 /* CoreDataTableViewController.swift */; };
 		C2DC36DE1D97095D00404774 /* MercadoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36DA1D97095D00404774 /* MercadoDetailViewController.swift */; };
 		C2DC36DF1D97095D00404774 /* MercadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC36DB1D97095D00404774 /* MercadosTableViewController.swift */; };
@@ -29,6 +32,9 @@
 		C2856C051D97077200AF1C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2856C081D97077200AF1C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2856C0A1D97077200AF1C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2BBCC121DA91E25000E0BB2 /* EditaMercadoControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditaMercadoControler.swift; sourceTree = "<group>"; };
+		C2BBCC141DA928B1000E0BB2 /* DetalheLoja.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheLoja.swift; sourceTree = "<group>"; };
+		C2BBCC161DA93649000E0BB2 /* DetalheSegmentoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalheSegmentoTableViewController.swift; path = ListaDeMercados/DetalheSegmentoTableViewController.swift; sourceTree = "<group>"; };
 		C2DC36D91D97095D00404774 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
 		C2DC36DA1D97095D00404774 /* MercadoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercadoDetailViewController.swift; sourceTree = "<group>"; };
 		C2DC36DB1D97095D00404774 /* MercadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercadosTableViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +60,7 @@
 		C2856BEF1D97077200AF1C69 = {
 			isa = PBXGroup;
 			children = (
+				C2BBCC181DA93EEF000E0BB2 /* Detalhes */,
 				C2856BFA1D97077200AF1C69 /* ListaDeMercados */,
 				C2856BF91D97077200AF1C69 /* Products */,
 			);
@@ -74,6 +81,7 @@
 				C2DC36D91D97095D00404774 /* CoreDataTableViewController.swift */,
 				C2DC36E11D97099100404774 /* Main.storyboard */,
 				C2DC36DA1D97095D00404774 /* MercadoDetailViewController.swift */,
+				C2BBCC121DA91E25000E0BB2 /* EditaMercadoControler.swift */,
 				C2DC36DB1D97095D00404774 /* MercadosTableViewController.swift */,
 				C2DC36DC1D97095D00404774 /* MercadoTableViewCell.swift */,
 				C2856C051D97077200AF1C69 /* Assets.xcassets */,
@@ -82,6 +90,15 @@
 				C2DC36E41D970AD000404774 /* Data Core */,
 			);
 			path = ListaDeMercados;
+			sourceTree = "<group>";
+		};
+		C2BBCC181DA93EEF000E0BB2 /* Detalhes */ = {
+			isa = PBXGroup;
+			children = (
+				C2BBCC141DA928B1000E0BB2 /* DetalheLoja.swift */,
+				C2BBCC161DA93649000E0BB2 /* DetalheSegmentoTableViewController.swift */,
+			);
+			name = Detalhes;
 			sourceTree = "<group>";
 		};
 		C2DC36E41D970AD000404774 /* Data Core */ = {
@@ -169,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2856C041D97077200AF1C69 /* ListaDeMercados.xcdatamodeld in Sources */,
+				C2BBCC151DA928B1000E0BB2 /* DetalheLoja.swift in Sources */,
 				C2DC36E01D97095D00404774 /* MercadoTableViewCell.swift in Sources */,
+				C2BBCC171DA93649000E0BB2 /* DetalheSegmentoTableViewController.swift in Sources */,
 				C2DC36EC1D970AEB00404774 /* Mercado+CoreDataProperties.swift in Sources */,
 				C2856BFC1D97077200AF1C69 /* AppDelegate.swift in Sources */,
 				C2DC36EB1D970AEB00404774 /* Mercado+CoreDataClass.swift in Sources */,
@@ -177,6 +196,7 @@
 				C2DC36E91D970AEB00404774 /* Mercados+CoreDataClass.swift in Sources */,
 				C2DC36DD1D97095D00404774 /* CoreDataTableViewController.swift in Sources */,
 				C2DC36DE1D97095D00404774 /* MercadoDetailViewController.swift in Sources */,
+				C2BBCC131DA91E25000E0BB2 /* EditaMercadoControler.swift in Sources */,
 				C2DC36EA1D970AEB00404774 /* Mercados+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

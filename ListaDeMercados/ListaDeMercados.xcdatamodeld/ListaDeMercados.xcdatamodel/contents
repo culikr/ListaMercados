@@ -4,15 +4,15 @@
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="numlojas" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="segmento" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mercados" inverseName="newRelationship" inverseEntity="Mercados" syncable="YES"/>
+        <relationship name="lojas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mercados" inverseName="mercado" inverseEntity="Mercados" syncable="YES"/>
     </entity>
     <entity name="Mercados" representedClassName=".Mercados" syncable="YES">
         <attribute name="endereco" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mercado" inverseName="newRelationship" inverseEntity="Mercado" syncable="YES"/>
+        <relationship name="mercado" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mercado" inverseName="lojas" inverseEntity="Mercado" syncable="YES"/>
     </entity>
     <elements>
         <element name="Mercado" positionX="-153" positionY="-27" width="128" height="103"/>
-        <element name="Mercados" positionX="205" positionY="72" width="128" height="73"/>
+        <element name="Mercados" positionX="205" positionY="72" width="128" height="88"/>
     </elements>
 </model>
